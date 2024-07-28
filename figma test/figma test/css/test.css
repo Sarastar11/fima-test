@@ -1,0 +1,165 @@
+* {
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    border-radius: 24px;
+}
+
+.left {
+    background-color: white;
+    width: 50%;
+}
+
+form {
+    text-align: center;
+    margin-top: 149px;
+    margin-bottom: 149px;
+}
+
+h1 {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.lorem {
+    color: rgba(82, 82, 82, 1);
+    margin-bottom: 20px;
+}
+
+#fname {
+    background: url(../images/Frame.png) no-repeat left, rgba(240, 237, 255, 0.8);
+}
+
+#password {
+    background: url(../images/Frame\ \(1\).png) no-repeat left, rgba(240, 237, 255, 0.8);
+}
+
+#fname,
+#password {
+    padding-left: 60px;
+    border-radius: 16px;
+    width: 364px;
+    height: 52px;
+    border: 0;
+    background-position: 30px;
+}
+
+#button {
+    background: linear-gradient(99.78deg, #9181F4 -5.85%, #5038ED 109.55%);
+    width: 124px;
+    height: 52px;
+    border-radius: 16px;
+    border: 0;
+    color: white;
+    box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+}
+
+#link {
+    color: black;
+    text-decoration: none;
+        display: flex;
+        align-items: center;
+line-height: 24px;
+gap: 5px;
+}
+.others{
+color: rgba(82, 82, 82, 1);
+}
+#link::before,
+#link::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid rgba(240, 237, 255, 1);
+    margin: 0 10px;
+}
+.socialButtons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.social{
+    border:1px solid rgba(240, 237, 255, 1);
+    border-radius: 16px;
+background-color: white;
+width:364px ;
+height: 52px;
+display: flex;
+align-items: center;
+padding-left: 100px;
+gap: 5px;
+}
+.social img{
+    margin-right: 10px;
+}
+/* right section  */
+.right {
+    background: url(../images/Rectangle\ 4.png) no-repeat, linear-gradient(217.64deg, #9181F4 -5.84%, #5038ED 106.73%);
+    width: 50%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.card{
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    background: rgba(255, 255, 255, 0.21);
+    width:412px ;
+    border-radius: 16px;
+    height: 524px;
+    position: relative;
+}
+.card p{
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+    padding: 20px;
+    width: 184px;
+}
+#woman{
+    position: absolute;
+right: 0;
+}
+.roundImg{
+      position: absolute;
+      bottom: 0;
+      translate: -30px;
+      height: 79px;
+      margin-bottom: 60px;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    #fname,#password{
+        width: 80%;
+    }
+.left, .right{
+    width: 100%;
+}
+.card{
+    width: 60%;
+    height: auto;
+    margin-bottom: 100px;
+    margin-top: 110px;
+}
+.card p{
+    font-size: 80%;
+    width: 70%;
+}
+.roundImg{
+    height: 24%;
+}
+#woman{
+    height: auto;
+width: 400px;
+margin-top: 200px;}
+}
